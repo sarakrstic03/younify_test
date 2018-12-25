@@ -70,9 +70,26 @@ header {
           cursor: pointer; }
     header .top_header .show_menu {
       display: none; }
+  header .mobile_menu {
+    width: 100%; }
   @media screen and (max-width: 767px) {
     header .top_header nav {
-      display: none; }
+      margin-top: 20px;
+      display: none;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      /* position: relative; */
+      background: #f1f1f1;
+      border-top: 1px solid #ccc; }
+      header .top_header nav ul {
+        padding: 15px 0 0 20px;
+        z-index: 9999; }
+        header .top_header nav ul li {
+          display: block;
+          text-align: left; }
     header .top_header .social_media {
       display: none; }
     header .top_header .show_menu {
@@ -296,6 +313,16 @@ header {
         top: -53px; }
       .projects .slick-next {
         top: -53px; } }
+  @media screen and (max-width: 1024px) {
+    .projects .row {
+      margin: 0; }
+    .projects .projects_gallery .gallery {
+      max-width: 100%;
+      height: 30px; }
+    .projects .slick-prev {
+      top: -100px; }
+    .projects .slick-next {
+      top: -100px; } }
 
 .who_we_are {
   margin-bottom: 40px; }
@@ -472,6 +499,11 @@ header {
       .clients .slick-next {
         top: -53px;
         right: 15px; } }
+  @media screen and (max-width: 1024px) {
+    .clients .slick-prev {
+      left: 15px; }
+    .clients .slick-next {
+      right: 15px; } }
 
 .testemonials {
   margin-bottom: 90px; }

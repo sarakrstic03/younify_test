@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    // Display and hide menu
+    $('.show_menu').click(function() {
+        $('.top_header .mobile_menu nav').toggle();
+    });
     $('.home_slider').slick({
         dots: true,
         arrows: true
